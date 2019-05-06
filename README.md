@@ -1,2 +1,2 @@
 # coordinate-locator
-A 2D game which you guess a predetermined coordinate
+A 2D python game which you guess a predetermined coordinate
