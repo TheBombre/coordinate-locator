@@ -2,7 +2,11 @@ from random import randint
 from sys import argv
 
 
-def create_grid(col_num=10, row_num=10):
+def create_grid(col_num, row_num):
+    if len(argv) >= 3:
+        col_num = int(argv[1])
+        row_num = int(argv[2])
+
     grid = []
     for i in range(row_num):
         temp_row = []
@@ -12,7 +16,7 @@ def create_grid(col_num=10, row_num=10):
     return grid
 
 
-default_grid = create_grid(int(argv[1]), int(argv[2]))
+default_grid = create_grid(10, 10)
 
 row_num = len(default_grid)
 col_num = len(default_grid[0])
